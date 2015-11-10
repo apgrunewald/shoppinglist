@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopping List APG</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Hind+Vadodara|Homemade+Apple' rel='stylesheet' type='text/css'>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="js/apps.js"></script>
+</head>
+
+<body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+<!-- Main Container -->
+  <div class="container" id="main">
+  <!-- Header -->
+    <div class="row">
+      <div class="col-md-12" id="header">
+        <h1>Groceries</h1>
+        <div id="cover"></div>
+      </div>
+    </div>
+    <!-- New Item Input -->
+    <div class="row">
+    </div><!-- /.col-lg-6 -->
+      <div class="col-md-8 col-md-offset-2">
+        <div class="input-group">
+          <input type="text" id="add" class="form-control" placeholder="+add item, select a category">
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown">Category <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li id="produceb">Produce</li>
+              <li id="proteinb">Protein</li>
+              <li id="otherb">Other</li> 
+            </ul>
+          </div><!-- /btn-group -->
+        </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+    </div>
+<!-- List Area -->
+  <div class="container">
+    <div class="row" id="list-area">
+      <div class="col-md-4" id="produce">
+         <div>
+            <h3>Produce</h3>
+            <hr>
+            <p class="todo"><button class="delete">X</button>Click on me to check-off</p>
+            <p class="todo"><button class="delete">X</button>Click on the "X" to delete</p>
+          </div>
+      </div>
+      <div class="col-md-4" id="protein">
+          <div>
+            <h3>Protein</h3>
+            <hr>
+             <p class="todo"><button class="delete">X</button>Free Range Eggs</p>
+              <p class="todo"><button class="delete">X</button>Flank Steak</p>
+          </div>
+      </div>
+      <div class="col-md-4" id="other">
+          <div>
+            <h3>Other</h3>
+             <hr>
+             <p class="todo"><button class="delete">X</button>Beer (for cheat day)</p>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
